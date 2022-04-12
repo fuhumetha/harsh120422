@@ -1,5 +1,7 @@
 FROM harshpreets63/random:simple
 
+RUN pip3 install --no-cache-dir -r requirements.txt
+
 WORKDIR /usr/src/app
 COPY . .
 
